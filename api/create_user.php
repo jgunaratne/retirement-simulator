@@ -7,7 +7,8 @@ include 'ip.inc';
 $mtwid = $_GET["mtwid"];
 $goal = $_GET["goal"];
 
-$locStr = implode(", ", getClientLocByIP());
+// $locStr = implode(", ", getClientLocByIP());
+$locStr = "Unknown"
 
 function get_client_ip() {
   $ipaddress = '';
@@ -30,7 +31,7 @@ function get_client_ip() {
 
 //$groupid = 1;
 $usercode = uniqid(true);
-$ip = get_client_ip();
+// $ip = get_client_ip();
 $year = 1980;
 $reward = null;
 $totalvalue = 0;
